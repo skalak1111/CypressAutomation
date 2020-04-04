@@ -1,0 +1,23 @@
+{
+  "name": "automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/cypress run",
+    "headTest": "npm run test -- --headed",
+    "chromeTest": "npm run test -- --browser chrome",
+    "recoredDashboardTest": "npm run test -- --record --key e45b4abb-12c4-4b2e-bcb1-fb36dd4b6cb7",
+    "reportMochawesomeTst": "npm run test -- --reporter mochawesome",
+    "greenKartTest": "npm run test -- --spec \"cypress/integration/greenkart/*\""
+  },
+  "author": "Sai Krishna",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^4.3.0"
+  },
+  "devDependencies": {
+    "mocha": "^7.1.1",
+    "mochawesome": "^5.0.0"
+  }
+}

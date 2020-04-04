@@ -1,0 +1,11 @@
+{
+  "chromeWebSecurity": false,
+  "defaultCommandTimeout": 6000,
+  "env": {
+    "url": "https://rahulshettyacademy.com",
+    "qa": "https://rahulshettyacademy.com/angularpractice/",
+    "uat": "https://rahulshettyacademy.com/angularpractice/"
+  },
+  "projectId": "j8t254",
+  "reporter": "mochawesome"
+}

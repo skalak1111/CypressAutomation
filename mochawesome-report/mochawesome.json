@@ -1,0 +1,138 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-04-04T21:53:13.551Z",
+    "end": "2020-04-04T21:53:32.073Z",
+    "duration": 18522,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5321c05d-a5df-4e23-943d-6f82780dc5bb",
+      "title": "",
+      "fullFile": "cypress/integration/greenkart/first_test_spec.js",
+      "file": "cypress/integration/greenkart/first_test_spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "78e8d123-28f4-473e-b7b2-007d3e2546b9",
+          "title": "My first test suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "My first test case",
+              "fullTitle": "My first test suite My first test case",
+              "timedOut": null,
+              "duration": 24,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(true).to.equal(true);",
+              "err": {},
+              "uuid": "7211f5ad-ffb4-4c47-9644-8c9688fc5143",
+              "parentUUID": "78e8d123-28f4-473e-b7b2-007d3e2546b9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Visit IBM website",
+              "fullTitle": "My first test suite Visit IBM website",
+              "timedOut": null,
+              "duration": 7373,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://ibm.com');\ncy.wait(1000);\ncy.get('#q').type('Analytics{enter}');",
+              "err": {},
+              "uuid": "a088d394-ebdc-4968-8077-38091d6aba08",
+              "parentUUID": "78e8d123-28f4-473e-b7b2-007d3e2546b9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Testing Rahul Shetty website",
+              "fullTitle": "My first test suite Testing Rahul Shetty website",
+              "timedOut": null,
+              "duration": 7683,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://rahulshettyacademy.com/seleniumPractise/#/');\ncy.get('.search-keyword').type('cu');\ncy.wait(1000);\ncy.get('.products').as('productsLocator');\ncy.get('.product:visible').should('have.length.gt', 1);\ncy.get('@productsLocator').find('.product').should('have.length', 2); //cy.get('.products').find('.product').eq(0).contains('ADD TO CART').click()\n//cy.get(':nth-child(2) > .product-action > button').click()\n/*cy.get('.products').find('.product').each(($el, index, $list) => {\n    //const vegName = $el.find('.product-name').text()\n    if($el.find('.product-name').text().includes('Capsicum')) { \n        //$el.find('button').click()\n        cy.wrap($el).contains('ADD TO CART').click()\n    }\n})*/\n//asert if logo text is correctly displayed\ncy.get('.brand').should('have.text', 'GREENKART'); //this is to print in logs\ncy.get('.brand').then(function (logo) {\n  cy.log(logo.text());\n});",
+              "err": {},
+              "uuid": "a05d6c6c-18b9-4224-bc70-7f9c5262fc4c",
+              "parentUUID": "78e8d123-28f4-473e-b7b2-007d3e2546b9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7211f5ad-ffb4-4c47-9644-8c9688fc5143",
+            "a088d394-ebdc-4968-8077-38091d6aba08",
+            "a05d6c6c-18b9-4224-bc70-7f9c5262fc4c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 15080,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.1.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "5.0.0"
+    },
+    "marge": {
+      "options": {},
+      "version": "4.1.0"
+    }
+  }
+}
