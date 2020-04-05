@@ -1,4 +1,10 @@
 language: node_js
 node_js:
   - 8.11.4
-cache: npm
+cache:
+  bundler: true
+  apt: true
+  directories:
+  - "${HOME}/.npm"
+  - "${HOME}/.nvm"
+  - "${HOME}/.cache/Cypress"

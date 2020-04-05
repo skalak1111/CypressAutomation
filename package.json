@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/.bin/cypress run",
+    "test": "node_modules/.bin/cypress open",
     "headTest": "npm run test -- --headed",
     "chromeTest": "npm run test -- --browser chrome",
     "recoredDashboardTest": "npm run test -- --record --key e45b4abb-12c4-4b2e-bcb1-fb36dd4b6cb7",
