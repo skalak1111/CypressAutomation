@@ -7,5 +7,6 @@
     "uat": "https://rahulshettyacademy.com/angularpractice/"
   },
   "projectId": "j8t254",
-  "reporter": "mochawesome"
+  "reporter": "mochawesome",
+  "integrationFolder": "cypress/integration/greenkart"
 }
